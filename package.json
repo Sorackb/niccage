@@ -1,0 +1,35 @@
+{
+  "name": "niccage",
+  "version": "1.0.0",
+  "description": "Replaces all images on all pages to Nicolas Cage.",
+  "main": "src/background.js",
+  "scripts": {
+    "pack": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sorackb/niccage.git"
+  },
+  "keywords": [
+    "nicolas",
+    "cage",
+    "images"
+  ],
+  "author": "Lucas Bernardo <sorackb@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sorackb/niccage/issues"
+  },
+  "homepage": "https://github.com/Sorackb/niccage#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
