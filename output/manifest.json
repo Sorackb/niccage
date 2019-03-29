@@ -1,6 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "niccage",
+  "short_name": "niccage",
+  "name": "Nicolas Cage Replacer",
   "description": "Replaces all images on all pages to Nicolas Cage.",
   "version": "1.0",
   "permissions": [
