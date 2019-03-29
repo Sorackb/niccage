@@ -4,12 +4,14 @@ import images from './data.js';
   'use strict';
 
   const urls = images.map(({ url }) => url);
-  const { length } = urls;
+  // Shuffle
+  urls.sort(() => Math.random() - 0.5);
 
   chrome.webRequest.onBeforeRequest.addListener(({ url }) => {
     if (urls.includes(url)) return;
 
-    const redirectUrl = urls[Math.floor(Math.random() * length)];
+    const redirectUrl = urls.shift();
+    images.push(redirectUrl);
 
     return { redirectUrl };
   },

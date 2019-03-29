@@ -3,6 +3,9 @@ import images from './data.js';
 (() => {
   'use strict';
 
+  // Shuffle
+  images.sort(() => Math.random() - 0.5);
+
   const proportions = images.reduce((accumulator, { width, height, url }) => {
     const proportion = Math.round(Math.ceil(width / height * 100) / 5 ) * 5 / 100;
     const copy = { ...accumulator };
@@ -22,8 +25,10 @@ import images from './data.js';
     }, {});
 
     const urls = proportions[closest];
+    const url = urls.shift();
+    urls.push(url);
 
-    return urls[Math.floor(Math.random() * urls.length)];
+    return url;
   };
 
   window.onload = () => {
