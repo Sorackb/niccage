@@ -61,7 +61,7 @@ typings/
 .next
 
 # Generated files
-background.js
-content.js
-background.js.map
-content.js.map
+/background.js
+/content.js
+/background.js.map
+/content.js.map
