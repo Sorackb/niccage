@@ -8,7 +8,10 @@ import images from './data.js';
   urls.sort(() => Math.random() - 0.5);
 
   chrome.webRequest.onBeforeRequest.addListener(({ url }) => {
-    if (urls.includes(url)) return;
+
+    if (urls.includes(url)) {
+      return { redirectUrl: url };
+    }
 
     const redirectUrl = urls.shift();
     images.push(redirectUrl);
