@@ -63,5 +63,7 @@ typings/
 # Generated files
 /background.js
 /content.js
+/data.js
 /background.js.map
 /content.js.map
+/data.js.map

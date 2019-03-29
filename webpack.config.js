@@ -4,6 +4,7 @@ module.exports = {
   entry: {
     background: join(__dirname, 'src/background.js'),
     content: join(__dirname, 'src/content.js'),
+    data: join(__dirname, 'src/data.js'),
   },
   output: {
     path: __dirname,
