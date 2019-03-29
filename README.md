@@ -11,4 +11,4 @@ npm run pack
 - Go to `chrome://extensions/` using `Chrome`;
 - Enable `Developer mode`;
 - Click in `Load Unpacked`;
-- Open the target folder.
+- Open the output folder.
